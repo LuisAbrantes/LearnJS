@@ -7,18 +7,18 @@
     <style>
         body {
             background-color: #4c72d4;
-            color: #ffffff;
+            color: #ffffff; /* CSS Comment - Can use in JS too */
             font: normal 20pt Arial;
         }
     </style>
 </head>
 <body>
-    <h1>Hello World</h1>
-
+    <h1>Hello World!</h1>
+    <p>Jesus is King!</p> <!-- HTML Comment -->
     <script>
-        window.alert('My first Message'); // Ok
-        window.confirm("Do you like Apple?") // Ok or Cancel
-        window.prompt("What is your phone company?") // Write
+        // JS Comment
+        var phoneBrand = window.prompt("What is your phone brand?") // Write
+        window.alert('Really, ' + phoneBrand + ' is the best phone brand!'); // + To concatenate
     </script>
 </body>
 </html>
