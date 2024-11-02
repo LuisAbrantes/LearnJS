@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learning JS</title>
+    <style>
+        body {
+            font: normal 18pt Arial;
+            text-align: center;
+            color: aliceblue;
+            background-color: #363c4e;
+        }
+    </style>
+</head>
+<body>
+    <h1>Starting DOM studies</h1>
+    <p>Here is the result</p>
+    <p>Learn <strong>DOM</strong> in JavaScript</p>
+    <div id="message" class="message" name="message">Click here.</div>
+    <script>
+        var p1 = document.getElementsByTagName('p')[1]
+        var d = window.document.getElementById('message') // get the element by id
+        var d = window.document.getElementsByClassName('message')[0] // get the element by class
+        var d = window.document.getElementsByName('message')[0] // get the element by name 
+        var d = window.document.querySelector('div#message') // get the element by querySelector
+        d.innerText = 'New message'
+        
+        /*
+        d.style.color = '#4c72d4'
+        d.style.backgroundColor = '#ffffff'
+        d.style.cursor = 'pointer'
+        d.innerText = 'Waiting...' 
+        */
+
+    </script>
+</body>
+</html>
