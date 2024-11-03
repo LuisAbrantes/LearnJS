@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learning JS</title>
+    <style>
+        body{
+            font: normal 20pt Arial;
+            background-color: #363c4e;
+            color: aliceblue;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>Fine System</h1>
+    Car Velocity: <input type="number" name="textVel" id="vel"> Km/h
+    <input type="button" value="Verify" onclick="calc()">
+    <div id="res">
+
+    </div>
+    <script>
+        function calc(){
+            // var textVel = window.document.getElementById('vel')
+            var textVel = window.document.querySelector('input#vel')
+            // var res = window.getElementByID('res')
+            var res = window.document.querySelector('div#res')
+            var vel = Number(textVel.value)
+            res.innerHTML = `<p><strong>Your car is running at ${vel} Km/h</strong></p>`
+            if(vel > 60){
+                res.innerHTML += `<p>Too fast! <strong> Fine </strong> of R$ 120,00</p>`
+            } else {
+                res.innerHTML += `<p>Safe driving! Have a good day!</p>`
+            }
+            res.innerHTML += `<p>Ever use yours seat belts</p>`
+
+        }
+    </script>
+</body>
+</html>

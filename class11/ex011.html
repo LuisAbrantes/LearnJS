@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learning JS</title>
+    <style>
+        body {
+            font: normal 18pt Arial;
+            text-align: center;
+            color: aliceblue;
+            background-color: #363c4e;
+        }
+    </style>
+</head>
+<body>
+    Where are you from? <input type="text" name="firstCountry" id="from"> <br>
+    Which country are you living? <input type="text" name="secondCountry" id="living"> <br>
+    <input type="button" value="Check" onclick="calc()">
+    <div id="res"> 
+        
+    </div>
+
+    <script>
+        function calc(){
+            var textFrom = window.document.getElementsByName('firstCountry')[0].value
+            var textLiving = window.document.querySelector('input#living').value
+            var res = window.document.querySelector('div#res')
+            if (textFrom === textLiving){
+                res.innerHTML = `You are a native in your country ${textFrom}!`
+            } else{
+                res.innerHTML = `You are a foreigner in ${textLiving}, because you are from ${textFrom}!`
+            }
+        }
+    </script>
+</body>
+</html>
