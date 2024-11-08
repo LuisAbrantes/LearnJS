@@ -1,0 +1,50 @@
+body{     
+    font: normal 20pt Arial;
+    background-color: #363c4e;
+}
+
+header{
+    color: aliceblue;
+    text-align: center;
+}
+
+section{
+    background: aliceblue;
+    border-radius: 10px;
+    padding: 15px;
+    width: 500px;
+    margin: auto;
+    box-shadow: 5px 5px 10px rgba(0,0,0,0.363);
+}
+
+footer{
+    color: aliceblue;
+    text-align: center;
+    font-style: italic;
+}
+
+#photo {
+    text-align: center;
+    margin: 15px 0;
+}
+
+#image {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+div{
+    text-align: center;
+    padding: 8px;
+}
+
+a{
+    text-decoration: none;
+    color: #363c4e;
+    background-color: aliceblue;
+    padding: 5px;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.363);
+}
