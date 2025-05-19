@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Sistema de Agenda</title>
+    </head>
+    <body>
+        <h1>Sistema de Agenda</h1>
+
+        <div class="section">
+            <h2>Adicionar Evento</h2>
+            <form id="addEventForm">
+                <label for="description">Descrição:</label>
+                <input type="text" id="description" required />
+
+                <label for="data">Data:</label>
+                <input type="date" id="data" required />
+
+                <label for="local">Local:</label>
+                <input type="text" id="local" required />
+
+                <button type="submit">Adicionar</button>
+            </form>
+        </div>
+
+        <div class="section">
+            <h2>Eventos Agendados</h2>
+            <div id="eventsList">
+                <table id="eventsTable">
+                    <thead>
+                        <tr>
+                            <th>#</th>
+                            <th>Descrição</th>
+                            <th>Data</th>
+                            <th>Local</th>
+                            <th>Ações</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!-- Os eventos serão inseridos aqui via JavaScript -->
+                    </tbody>
+                </table>
+                <p id="noEvents" style="display: none">
+                    Não há eventos agendados.
+                </p>
+            </div>
+        </div>
+
+        <div class="section" id="editSection" style="display: none">
+            <h2>Editar Evento</h2>
+            <form id="editEventForm">
+                <input type="hidden" id="editIndex" />
+
+                <label for="editDescription">Descrição:</label>
+                <input type="text" id="editDescription" required />
+
+                <label for="editData">Data:</label>
+                <input type="date" id="editData" required />
+
+                <label for="editLocal">Local:</label>
+                <input type="text" id="editLocal" required />
+
+                <button type="submit">Salvar Alterações</button>
+                <button type="button" id="cancelEdit">Cancelar</button>
+            </form>
+        </div>
+
+        <script src="./script/script.js"></script>
+    </body>
+</html>
